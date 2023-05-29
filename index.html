@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Регистрация/Вход</title>
-    <link rel="stylesheet" type="text/css" href="/CSS/register.css">
+    <link rel="stylesheet" type="text/css" href="CSS/register.css">
 </head>
 <body>
 <div class="container">
@@ -16,7 +16,7 @@
 
         <div id="register-form" style="display: none;">
             <h2>Регистрация</h2>
-            <form action="/PHP/register.php" method="post">
+            <form action="PHP/register.php" method="post">
                 <input type="email" name="email" placeholder="Почта" required>
                 <input type="password" name="password" placeholder="Пароль" required>
                 <input type="password" name="confirm_password" placeholder="Подтверждение пароля" required>
@@ -25,7 +25,7 @@
         </div>
         <div id="login-form" style="display: none;">
             <h2>Вход</h2>
-            <form action="/PHP/login.php" method="post">
+            <form action="PHP/login.php" method="post">
                 <input type="email" name="email" placeholder="Почта" required>
                 <input type="password" name="password" placeholder="Пароль" required>
                 <button type="submit">Войти</button>
@@ -33,6 +33,6 @@
         </div>
     </div>
 </div>
-<script src="/JS/reg-login.js"></script>
+<script src="JS/reg-login.js"></script>
 </body>
 </html>
