@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация/Вход</title>
+    <link rel="stylesheet" type="text/css" href="/CSS/register.css">
+</head>
+<body>
+<div class="container">
+    <div class="form-wrapper">
+        <h1>Выберите действие</h1>
+        <div class="form-buttons">
+            <button id="register-btn" class="register-button">Зарегистрироваться</button>
+            <button id="login-btn" class="login-button">Войти</button>
+        </div>
+
+        <div id="register-form" style="display: none;">
+            <h2>Регистрация</h2>
+            <form action="../PHP/register.php" method="post">
+                <input type="email" name="email" placeholder="Почта" required>
+                <input type="password" name="password" placeholder="Пароль" required>
+                <input type="password" name="confirm_password" placeholder="Подтверждение пароля" required>
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+        </div>
+        <div id="login-form" style="display: none;">
+            <h2>Вход</h2>
+            <form action="/PHP/login.php" method="post">
+                <input type="email" name="email" placeholder="Почта" required>
+                <input type="password" name="password" placeholder="Пароль" required>
+                <button type="submit">Войти</button>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="/JS/reg-login.js"></script>
+</body>
+</html>

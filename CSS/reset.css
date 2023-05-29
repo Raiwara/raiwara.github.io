@@ -1,0 +1,80 @@
+/* Reset styles */
+
+/* Убираем отступы и поля по умолчанию */
+body,
+h1, h2, h3, h4, h5, h6,
+p,
+ul, ol, li,
+figure,
+blockquote,
+dl, dd, dt {
+    margin: 0;
+    padding: 0;
+}
+
+/* Устанавливаем базовые стили для текста */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Убираем стили для маркированных и нумерованных списков */
+ul, ol {
+    list-style: none;
+}
+
+/* Убираем стили для горизонтальной линии в ссылках */
+a {
+    text-decoration: none;
+    border-bottom: none;
+}
+
+/* Обнуляем границы у изображений */
+img,
+figure {
+    border: 0;
+}
+
+/* Убираем стили для заголовков */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+/* Устанавливаем базовые стили для таблиц */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Убираем стили для кнопок */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    appearance: none;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* Сброс стилей для форм элементов */
+input,
+textarea,
+select,
+button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    color: inherit;
+    outline: none;
+    background-color: transparent;
+    resize: none;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+

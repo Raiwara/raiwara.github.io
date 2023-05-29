@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.basic-items,
+.upgraded-items {
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.sub-block {
+    margin-bottom: 20px;
+}
+
+.sub-block h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.item-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item {
+    width: 20%;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.item-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.item h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.item h2:hover {
+    cursor: pointer;
+}
+
+
+.item a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-items{
+    text-align: center;
+
+}
+.item p {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item p img {
+    width: 1em;
+    height: 1em;
+    margin-right: 5px;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Стиль всплывающего окна */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Стиль названия предмета */
+.item-title {
+    margin-top: 10px;
+    text-align: center;
+}
+.balance {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.user-email {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+button#buy-button {
+    border: none;
+    background-color: #007bff; /* Цвет фона кнопки */
+    color: #fff; /* Цвет текста кнопки */
+    padding: 10px 20px; /* Внутренний отступ кнопки */
+    border-radius: 5px; /* Закругление углов кнопки */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень */
+    cursor: pointer; /* Курсор при наведении */
+    transition: background-color 0.3s, color 0.3s; /* Плавное изменение цвета при наведении */
+}
+
+button#buy-button:hover {
+    background-color: #0056b3; /* Цвет фона кнопки при наведении */
+    color: #fff; /* Цвет текста кнопки при наведении */
+}
+
+
+
+
+
+
+
+
+
+
